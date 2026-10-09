@@ -13,3 +13,9 @@
 - https://chuifather.github.io/defense/odds/ — 모집 확률
 
 파일은 게임 저장소 `chuiFather/pom-defense`의 `python3 tools/store/make_site.py` → `docs/site/defense/`에서 만든다. 원본: `docs/privacy-policy.md`, `docs/odds.md`.
+
+## 츄이 서바이버즈 (`/survivors/`)
+- https://chuifather.github.io/survivors/ — 게임 소개
+- https://chuifather.github.io/survivors/privacy/ — 개인정보처리방침 (게임 설정 화면 버튼이 이 주소를 엶)
+
+파일은 게임 저장소 `chuiFather/pom-survivors`의 `python3 tools/store/make_site.py` → `docs/site/survivors/`에서 만든다. 원본: `docs/privacy-policy.md`.
