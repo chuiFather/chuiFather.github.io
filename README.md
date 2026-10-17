@@ -11,8 +11,9 @@
 ## 츄이 디펜스 (`/defense/`)
 - https://chuifather.github.io/defense/privacy/ — 개인정보처리방침
 - https://chuifather.github.io/defense/odds/ — 모집 확률
+- https://chuifather.github.io/defense/en/ — 영어 (privacy/·odds/)
 
-파일은 게임 저장소 `chuiFather/pom-defense`의 `python3 tools/store/make_site.py` → `docs/site/defense/`에서 만든다. 원본: `docs/privacy-policy.md`, `docs/odds.md`.
+파일은 게임 저장소 `chuiFather/pom-defense`의 `python3 tools/store/make_site.py` → `docs/site/defense/`에서 만든다. 원본: `docs/privacy-policy.md`·`docs/privacy-policy.en.md`, `docs/odds.md`(영어 확률표는 같은 숫자 + 앱 strings 영어 이름).
 
 ## 츄이 서바이버즈 (`/survivors/`)
 - https://chuifather.github.io/survivors/ — 게임 소개
