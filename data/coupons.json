@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "app": "station",
+    "code": "SPACE-OPEN",
+    "reward": "tickets",
+    "amount": 20,
+    "start": "2026-10-23",
+    "end": "2027-01-21",
+    "label": "모집권 20장 (오픈 기념)",
+    "label_en": "20 Recruit Tickets (Grand Opening)"
+  },
+  {
+    "app": "station",
+    "code": "CHUI-SPACE",
+    "reward": "tickets",
+    "amount": 10,
+    "label": "모집권 10장",
+    "label_en": "10 Recruit Tickets",
+    "builtin": true,
+    "start": "2026-10-23"
+  }
+]
