@@ -1,0 +1,60 @@
+[
+  {
+    "id": "station", "show": true, "status": "released", "collab_live": false,
+    "name": "츄이의 우주정거장", "name_en": "Chui's Space Station",
+    "tagline": "댕냥 방치형 키우기", "tagline_en": "Idle space station with dogs and cats",
+    "desc": "포메라니안 함장 츄이와 강아지·고양이 크루가 함께하는 귀여운 도트 우주 방치형 게임입니다.",
+    "desc_en": "A cute pixel idle game where Captain Chui the Pomeranian runs a space station with dog and cat crew.",
+    "icon": "assets/icons/station.png", "page": "station/",
+    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomstation", "onestore": "",
+    "collab_code": "CHUI-STATION"
+  },
+  {
+    "id": "survivors", "show": true, "status": "testing", "collab_live": false,
+    "name": "츄이 서바이버즈", "name_en": "Chui Survivors",
+    "tagline": "댕냥이 도트 서바이벌", "tagline_en": "Pixel survival with dogs and cats",
+    "desc": "산책 나온 포메라니안 츄이가 공원에서 몰려드는 모기·비둘기·다람쥐를 상대로 10분을 버티는 도트 서바이벌 게임입니다.",
+    "desc_en": "Chui the Pomeranian is out for a walk in the park. Survive 10 minutes against swarms of mosquitoes, pigeons and squirrels.",
+    "icon": "assets/icons/survivors.png", "page": "survivors/",
+    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomsurvivors", "onestore": "",
+    "collab_code": "CHUI-SURVIVORS"
+  },
+  {
+    "id": "defense", "show": true, "status": "testing", "collab_live": false,
+    "name": "츄이 디펜스", "name_en": "Chui Defense",
+    "tagline": "강아지 고양이 머지 디펜스", "tagline_en": "Merge defense with dogs and cats",
+    "desc": "같은 크루 둘을 합쳐 더 강하게! 강아지·고양이 크루로 몰려오는 비둘기·다람쥐를 막는 귀여운 도트 머지 디펜스 게임입니다.",
+    "desc_en": "Merge two of the same crew to make them stronger! Stop pigeons and squirrels with your dog and cat crew in this cute pixel merge defense.",
+    "icon": "assets/icons/defense.png", "page": "defense/",
+    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomdefense", "onestore": "",
+    "collab_code": "CHUI-DEFENSE"
+  },
+  {
+    "id": "expedition", "show": false, "status": "dev", "collab_live": false,
+    "name": "츄이 원정대", "name_en": "Chui Expedition",
+    "tagline": "턴제 카드 로그라이크", "tagline_en": "Turn-based card roguelike",
+    "desc": "", "desc_en": "", "icon": "", "page": "", "play": "", "onestore": "",
+    "collab_code": "CHUI-EXPEDITION"
+  },
+  {
+    "id": "puzzle", "show": false, "status": "dev", "collab_live": false,
+    "name": "츄이 퍼즐", "name_en": "Chui Puzzle",
+    "tagline": "퍼즐 모음", "tagline_en": "Puzzle collection",
+    "desc": "", "desc_en": "", "icon": "", "page": "", "play": "", "onestore": "",
+    "collab_code": "CHUI-PUZZLE"
+  },
+  {
+    "id": "idle", "show": false, "status": "dev", "collab_live": false,
+    "name": "츄이 키우기", "name_en": "Chui Idle RPG",
+    "tagline": "방치형 RPG", "tagline_en": "Idle RPG",
+    "desc": "", "desc_en": "", "icon": "", "page": "", "play": "", "onestore": "",
+    "collab_code": "CHUI-IDLE"
+  },
+  {
+    "id": "town", "show": false, "status": "dev", "collab_live": false,
+    "name": "츄이 마을", "name_en": "Chui Town",
+    "tagline": "카페와 농장", "tagline_en": "Cafe and farm",
+    "desc": "", "desc_en": "", "icon": "", "page": "", "play": "", "onestore": "",
+    "collab_code": "CHUI-TOWN"
+  }
+]

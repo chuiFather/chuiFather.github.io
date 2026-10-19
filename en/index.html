@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chui Series</title>
+<meta name="description" content="Cute pixel games starring Chui, a black-and-white parti Pomeranian">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a1630;--panel:#26204a;--panel2:#2f2858;--edge:#4a3f8a;--text:#ecebf7;--muted:#b9b4d6;--gold:#ffcd75;--cyan:#73eff7;--green:#a7f070}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);
+font:16px/1.7 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}
+h1,h2,.name{font-family:"Jua",-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-weight:400}
+h1{color:var(--gold);font-size:2rem;line-height:1.2;margin:0 0 4px}
+h2{color:var(--gold);font-size:1.3rem;margin:2.2rem 0 .6rem}
+a{color:var(--cyan)}.muted{color:var(--muted)}.small{font-size:.85rem}
+nav{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0 0;font-size:.95rem}
+.card{background:var(--panel);border:2px solid var(--edge);border-radius:12px;padding:16px;margin:10px 0}
+.games .card{margin:0}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.game{display:flex;gap:14px;align-items:flex-start}
+.game img{width:72px;height:72px;border-radius:16px;image-rendering:pixelated;flex:none}
+.name{font-size:1.2rem;color:var(--text)}
+.badge{display:inline-block;font-size:.75rem;padding:0 8px;border-radius:99px;border:1px solid var(--edge);color:var(--muted);margin-left:4px;vertical-align:middle}
+.badge.released{border-color:var(--green);color:var(--green)}
+.links{display:flex;gap:10px;flex-wrap:wrap;font-size:.9rem;margin-top:6px}
+.news .date{color:var(--muted);font-size:.85rem}.news b{color:var(--gold)}
+.code{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.code code{font:700 1.05rem/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--cyan);background:var(--panel2);padding:4px 10px;border-radius:8px;letter-spacing:.04em;word-break:break-all}
+button{font:inherit;font-size:.85rem;color:var(--bg);background:var(--gold);border:0;border-radius:8px;padding:4px 12px;cursor:pointer}
+footer{margin-top:3rem;border-top:1px solid var(--edge);padding-top:1rem;font-size:.85rem;color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head><body><main>
+<h1>Chui Series</h1>
+<p class="muted">Cute pixel games starring <b>Chui</b>, a black-and-white parti Pomeranian</p>
+<nav><a href="#games">Games</a><a href="#news">News</a><a href="#coupons">Coupons</a><a href="#collab">Collab codes</a><a href="../">한국어</a></nav>
+<h2 id="games">Games</h2>
+<div class="games"><div class="card game"><img src="../assets/icons/station.png" alt="" width="72" height="72"><div><span class="name">Chui&#x27;s Space Station</span><span class="badge released">Out now</span><div class="muted small">Idle space station with dogs and cats</div><div class="small">A cute pixel idle game where Captain Chui the Pomeranian runs a space station with dog and cat crew.</div><div class="links"><a href="https://play.google.com/store/apps/details?id=com.chuifather.pomstation">Google Play</a><a href="../station/">More</a></div></div></div><div class="card game"><img src="../assets/icons/survivors.png" alt="" width="72" height="72"><div><span class="name">Chui Survivors</span><span class="badge testing">Coming soon</span><div class="muted small">Pixel survival with dogs and cats</div><div class="small">Chui the Pomeranian is out for a walk in the park. Survive 10 minutes against swarms of mosquitoes, pigeons and squirrels.</div><div class="links"><a href="../survivors/en/">More</a></div></div></div><div class="card game"><img src="../assets/icons/defense.png" alt="" width="72" height="72"><div><span class="name">Chui Defense</span><span class="badge testing">Coming soon</span><div class="muted small">Merge defense with dogs and cats</div><div class="small">Merge two of the same crew to make them stronger! Stop pigeons and squirrels with your dog and cat crew in this cute pixel merge defense.</div><div class="links"><a href="../defense/en/">More</a></div></div></div></div>
+<h2 id="news">News</h2>
+<div class="card news"><span class="date">2026-10-19 · Chui Series</span><br><b>The Chui series homepage is open</b><br>News, coupons and collab codes for every Chui game, all in one place.</div>
+<h2 id="coupons">Coupons</h2>
+<p class="small muted">Enter a code in the game under <b>Settings → Coupon</b>. Each coupon can be used once.</p><p id="no-coupons" class="muted">No coupons available right now.</p>
+<h2 id="collab">Collab codes</h2>
+<p class="muted">Collab codes will appear here once each game is released.</p>
+<footer>Developer chuiFather · Black and White Raccoon · Contact <a href="mailto:polalis715@gmail.com">polalis715@gmail.com</a><br>Privacy: <a href="../en/privacy/">Chui&#x27;s Space Station</a> · <a href="../survivors/en/privacy/">Chui Survivors</a> · <a href="../defense/en/privacy/">Chui Defense</a></footer>
+</main><script>
+(function(){
+  // 쿠폰 기간: 한국 시간 날짜(YYYY-MM-DD)로 비교, 지난 것·아직인 것은 숨김
+  var now=new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  var shown=0;
+  document.querySelectorAll('[data-start]').forEach(function(el){
+    var s=el.getAttribute('data-start')||'', e=el.getAttribute('data-end')||'';
+    var ok=(!s||s<=now)&&(!e||now<=e);
+    el.hidden=!ok; if(ok) shown++;
+  });
+  var empty=document.getElementById('no-coupons');
+  if(empty) empty.hidden=shown>0;
+  document.querySelectorAll('button[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy'), label=b.textContent;
+      (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){
+        b.textContent=b.getAttribute('data-done'); setTimeout(function(){b.textContent=label},1500);
+      },function(){});
+    });
+  });
+})();
+</script></body></html>
