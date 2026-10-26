@@ -1,22 +1,22 @@
 [
   {
-    "id": "station", "show": true, "status": "released", "collab_live": false,
+    "id": "station", "show": true, "status": "released", "collab_live": true,
     "name": "츄이의 우주정거장", "name_en": "Chui's Space Station",
     "tagline": "댕냥 방치형 키우기", "tagline_en": "Idle space station with dogs and cats",
     "desc": "포메라니안 함장 츄이와 강아지·고양이 크루가 함께하는 귀여운 도트 우주 방치형 게임입니다.",
     "desc_en": "A cute pixel idle game where Captain Chui the Pomeranian runs a space station with dog and cat crew.",
     "icon": "assets/icons/station.png", "page": "station/",
-    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomstation", "onestore": "",
+    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomstation", "onestore": "https://onesto.re/0001010710",
     "collab_code": "CHUI-STATION"
   },
   {
-    "id": "survivors", "show": true, "status": "testing", "collab_live": false,
+    "id": "survivors", "show": true, "status": "released", "collab_live": true,
     "name": "츄이 서바이버즈", "name_en": "Chui Survivors",
     "tagline": "댕냥이 도트 서바이벌", "tagline_en": "Pixel survival with dogs and cats",
     "desc": "산책 나온 포메라니안 츄이가 공원에서 몰려드는 모기·비둘기·다람쥐를 상대로 10분을 버티는 도트 서바이벌 게임입니다.",
     "desc_en": "Chui the Pomeranian is out for a walk in the park. Survive 10 minutes against swarms of mosquitoes, pigeons and squirrels.",
     "icon": "assets/icons/survivors.png", "page": "survivors/",
-    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomsurvivors", "onestore": "",
+    "play": "", "onestore": "https://onesto.re/0001010711",
     "collab_code": "CHUI-SURVIVORS"
   },
   {
