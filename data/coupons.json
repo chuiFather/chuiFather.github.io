@@ -18,5 +18,25 @@
     "label_en": "10 Recruit Tickets",
     "builtin": true,
     "start": "2026-10-23"
+  },
+  {
+    "app": "survivors",
+    "code": "CHUI-OPEN",
+    "reward": "gold",
+    "amount": 5000,
+    "start": "2026-10-27",
+    "end": "2027-01-25",
+    "label": "용돈 5,000 (오픈 기념)",
+    "label_en": "5,000 Allowance (Grand Opening)"
+  },
+  {
+    "app": "survivors",
+    "code": "CHUI-WELCOME",
+    "reward": "gold",
+    "amount": 3000,
+    "label": "용돈 3,000",
+    "label_en": "3,000 Allowance",
+    "builtin": true,
+    "start": "2026-10-27"
   }
 ]
