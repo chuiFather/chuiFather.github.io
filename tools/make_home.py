@@ -2,12 +2,14 @@
 
   data/apps.json     앱 목록 (show = 홈에 보일지, status = released/testing/dev, collab_live = 콜라보 코드 공개)
   data/notices.json  공지 [{"app","id","date","title","body","title_en","body_en"}]  app = "series" 또는 앱 id
+  data/updates.json  게임별 업데이트 기록 [{"app","id","version","date","title","body","title_en","body_en"}] (SERIES.md §15)
+                     앱 저장소 스크립트가 채운다 (우주정거장: tools/store/export_updates.py). 앱 안 업데이트 소식과 같은 글
   data/coupons.json  쿠폰 [{"app","code","reward","amount","start","end","label","label_en","builtin"}]
                      reward·amount = 앱 core 보상 key·수량 (Firebase용), label = 사이트에 보일 보상 글
                      builtin = true면 앱 core에 들어 있는 영구 쿠폰 (Firebase에 안 넣음, 사이트에만 보임)
                      end 없으면 영구. 기간은 한국 시간 기준, 페이지가 열릴 때 지난 쿠폰은 숨김
 
-  → index.html (한국어), en/index.html (영어). 앱별 페이지(station/ survivors/ defense/ …)와 privacy/·odds/는 각 앱 저장소가 만든다.
+  → index.html (한국어), en/index.html (영어), updates/index.html·en/updates/index.html (업데이트 기록). 앱별 페이지(station/ survivors/ defense/ …)와 privacy/·odds/는 각 앱 저장소가 만든다.
 
 python3 tools/make_home.py   (표준 라이브러리만)
 """
@@ -37,6 +39,7 @@ T = {
         "forever": "기간 없음", "until": "까지", "copy": "복사", "copied": "복사됨",
         "privacy": "개인정보처리방침", "contact": "문의", "other": "English", "other_href": "en/",
         "series_tag": "츄이 시리즈", "dev": "개발자 chuiFather · 흑백너구리",
+        "updates": "업데이트 기록", "no_updates": "아직 업데이트 기록이 없어요.", "home": "츄이 시리즈 홈",
     },
     "en": {
         "title": "Chui Series", "lead": "Cute pixel games starring <b>Chui</b>, a black-and-white parti Pomeranian",
@@ -50,6 +53,7 @@ T = {
         "forever": "No end date", "until": "until", "copy": "Copy", "copied": "Copied",
         "privacy": "Privacy", "contact": "Contact", "other": "한국어", "other_href": "../",
         "series_tag": "Chui Series", "dev": "Developer chuiFather · Black and White Raccoon",
+        "updates": "Update history", "no_updates": "No updates yet.", "home": "Chui Series home",
     },
 }
 
@@ -73,6 +77,7 @@ nav{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0 0;font-size:.95rem}
 .badge.released{border-color:var(--green);color:var(--green)}
 .links{display:flex;gap:10px;flex-wrap:wrap;font-size:.9rem;margin-top:6px}
 .news .date{color:var(--muted);font-size:.85rem}.news b{color:var(--gold)}
+.ver{color:var(--cyan);font-weight:700}
 .code{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .code code{font:700 1.05rem/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--cyan);background:var(--panel2);padding:4px 10px;border-radius:8px;letter-spacing:.04em;word-break:break-all}
 button{font:inherit;font-size:.85rem;color:var(--bg);background:var(--gold);border:0;border-radius:8px;padding:4px 12px;cursor:pointer}
@@ -136,6 +141,8 @@ def build(lang):
                     f'<b>{esc(title)}</b><br>{esc(body)}</div>')
     news_html = "".join(rows[:10]) or f'<p class="muted">{t["no_news"]}</p>'
 
+    update_apps = {u["app"] for u in load_updates()}
+
     # 게임
     cards = []
     for a in apps:
@@ -147,6 +154,8 @@ def build(lang):
         if a.get("page"):
             page = a["page"] + ("en/" if lang == "en" and a["id"] != "station" else "")
             links.append(f'<a href="{up}{esc(page)}">{t["more"]}</a>')
+        if a["id"] in update_apps:
+            links.append(f'<a href="updates/#{esc(a["id"])}">{t["updates"]}</a>')
         icon = f'<img src="{up}{esc(a["icon"])}" alt="" width="72" height="72">' if a.get("icon") else ""
         cards.append(
             f'<div class="card game">{icon}<div><span class="name">{esc(pick(a, "name", lang))}</span>'
@@ -190,7 +199,7 @@ def build(lang):
 <style>{CSS}</style></head><body><main>
 <h1>{t["title"]}</h1>
 <p class="muted">{t["lead"]}</p>
-<nav><a href="#games">{t["games"]}</a><a href="#news">{t["news"]}</a><a href="#coupons">{t["coupons"]}</a><a href="#collab">{t["collab"]}</a><a href="{t["other_href"]}">{t["other"]}</a></nav>
+<nav><a href="#games">{t["games"]}</a><a href="#news">{t["news"]}</a><a href="updates/">{t["updates"]}</a><a href="#coupons">{t["coupons"]}</a><a href="#collab">{t["collab"]}</a><a href="{t["other_href"]}">{t["other"]}</a></nav>
 <h2 id="games">{t["games"]}</h2>
 {games_html}
 <h2 id="news">{t["news"]}</h2>
@@ -204,7 +213,50 @@ def build(lang):
 """
 
 
+def load_updates():
+    path = os.path.join(ROOT, "data", "updates.json")
+    return load("updates.json") if os.path.exists(path) else []
+
+
+def build_updates(lang):
+    """게임별 업데이트 기록 (최신 순). 앱 안 업데이트 소식과 같은 글 (SERIES.md §15)."""
+    t = T[lang]
+    by_app = {}
+    for u in load_updates():
+        by_app.setdefault(u["app"], []).append(u)
+    sections = []
+    for a in load("apps.json"):
+        rows = sorted(by_app.get(a["id"], []), reverse=True,
+                      key=lambda u: (u.get("date", ""), tuple(int(x) if x.isdigit() else 0 for x in u["version"].split(".")), u.get("id", 0)))
+        cards = []
+        for u in rows:
+            title = pick(u, "title", lang)
+            body = esc(pick(u, "body", lang)).replace("\n", "<br>")
+            cards.append(f'<div class="card news"><span class="ver">v{esc(u["version"])}</span> <span class="date">{esc(u.get("date"))}</span><br>'
+                         f'<b>{esc(title)}</b><br>{body}</div>')
+        if cards:
+            sections.append(f'<h2 id="{esc(a["id"])}">{esc(pick(a, "name", lang))}</h2>' + "".join(cards))
+    content = "".join(sections) or f'<p class="muted">{t["no_updates"]}</p>'
+    return f"""<!doctype html>
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{t["updates"]} — {t["title"]}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<style>{CSS}</style></head><body><main>
+<h1>{t["updates"]}</h1>
+<nav><a href="../">{t["home"]}</a></nav>
+{content}
+</main></body></html>
+"""
+
+
 def main():
+    for lang, path in (("ko", "updates/index.html"), ("en", "en/updates/index.html")):
+        out = os.path.join(ROOT, path)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(build_updates(lang))
+        print("wrote", path)
     for lang, path in (("ko", "index.html"), ("en", "en/index.html")):
         out = os.path.join(ROOT, path)
         os.makedirs(os.path.dirname(out), exist_ok=True)

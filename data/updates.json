@@ -1,0 +1,32 @@
+[
+  {
+    "app": "station",
+    "id": 9,
+    "version": "0.1.7",
+    "date": "2026-10-23",
+    "title": "크루가 더 생생해졌어요",
+    "body": "• 크루가 정거장을 돌아다니다 쉬고, 두리번거리고, 신나서 폴짝 뛰어요\n• 장면을 탭하면 가까운 크루도 같이 폴짝\n• 쿠폰: 설정 → 쿠폰에 코드를 넣어 보세요 (츄이 시리즈 콜라보 코드도 여기에)\n• 버그 수정",
+    "title_en": "Livelier crew",
+    "body_en": "• Crew now stroll around the station, take breaks, look around and hop for joy\n• Tap the scene and nearby crew hop too\n• Coupons: enter codes in Settings → Coupon (Chui series collab codes too)\n• Bug fixes and small English text fixes"
+  },
+  {
+    "app": "station",
+    "id": 8,
+    "version": "0.1.5",
+    "date": "2026-10-23",
+    "title": "영어(English) 지원!",
+    "body": "• 설정 → 언어에서 한국어·English를 고를 수 있어요 (기본은 폰 설정 따르기)\n• 크루 이름·도움말·튜토리얼까지 모두 영어로 볼 수 있어요",
+    "title_en": "Now in English!",
+    "body_en": "• Choose Korean or English in Settings → Language (by default it follows your phone)\n• Crew names, help and the tutorial are all translated"
+  },
+  {
+    "app": "station",
+    "id": 1,
+    "version": "0.1.7",
+    "date": "2026-10-23",
+    "title": "츄이의 우주정거장 오픈!",
+    "body": "함장 츄이와 함께 우주정거장을 키워 주세요!\n\n• 오픈 기념 이벤트: 7일 출석하면 한정 크루 \"별이\"가 와요 (11월 21일까지)\n• 크루 117종: 모집권은 80분마다 1장, 같은 크루를 또 만나면 별이 올라가요\n• 탐사 4종: 미니게임을 잘하면 보상 최대 +50%\n• 부스트 퍼즐 15스테이지: 풀면 생산 2배 (탐사 탭 맨 아래)\n• 꺼 두어도 생산! 돌아오면 위쪽 선물상자를 받아요\n\n모르는 게 있으면 위쪽 노란 ? 버튼을 눌러 보세요.",
+    "title_en": "Chui's Space Station is open!",
+    "body_en": "Help Captain Chui grow the space station!\n\n• Grand Opening event: check in for 7 days to get the limited crew \"Starry\" (until Nov 21)\n• 117 crew: you get 1 Recruit Ticket every 80 minutes, and meeting the same crew again raises its stars\n• 4 kinds of exploration: do well in the mini-games for up to +50% rewards\n• 15 Boost Puzzle stages: solve them for 2× production (bottom of the Explore tab)\n• Production keeps going while the app is closed! Claim the Gift Box at the top when you come back\n\nIf anything is unclear, tap the yellow ? button at the top."
+  }
+]
