@@ -12,7 +12,7 @@ hr{border:0;border-top:1px solid var(--edge);margin:2.5rem 0}.muted{color:var(--
 .card{background:var(--panel);border:2px solid var(--edge);border-radius:12px;padding:20px;margin:16px 0}
 </style></head><body><main>
 <h1>Privacy Policy — Chui's Space Station</h1>
-<p>Effective: October 23, 2026 · Last updated: October 19, 2026</p>
+<p>Effective: October 23, 2026 · Last updated: October 28, 2026 (push notifications added, from version 0.1.10)</p>
 <p>The developer ("Developer") of "Chui's Space Station" (the "Game") values your privacy and follows the applicable laws, including the Personal Information Protection Act of Korea. This policy explains what information the Game handles and how. (Korean version: <a href="https://chuifather.github.io/privacy/)">https://chuifather.github.io/privacy/)</a></p>
 <h2>1. Personal information the Developer collects directly</h2>
 <p><strong>None.</strong> The Developer does not directly collect or store on a server any information that identifies you, such as your name, email address or phone number.</p>
@@ -51,6 +51,12 @@ hr{border:0;border-top:1px solid var(--edge);margin:2.5rem 0}.muted{color:var(--
 <td>https://firebase.google.com/support/privacy</td>
 </tr>
 <tr>
+<td>Firebase Cloud Messaging</td>
+<td>Update and notice notifications, and (only with your consent) event &amp; offer notifications</td>
+<td>Firebase installation ID, notification token, subscribed topics (language, consent)</td>
+<td>https://firebase.google.com/support/privacy</td>
+</tr>
+<tr>
 <td>Google Play Billing (if installed from the Play Store)</td>
 <td>In-app purchases</td>
 <td>Payment details are handled by Google; the Developer only sees purchase records (order number, item)</td>
@@ -68,6 +74,13 @@ hr{border:0;border-top:1px solid var(--edge);margin:2.5rem 0}.muted{color:var(--
 <li>You can turn off ad personalization or reset your advertising ID in your device settings (Google → Ads).</li>
 <li>In regions that require consent, such as the EEA and the UK, an ad consent screen appears on first launch.</li>
 <li>Signing in to Play Games is optional; you can play without it.</li>
+</ul>
+<h2>2-1. Push notifications</h2>
+<ul>
+<li><strong>Game reminders</strong> (gift box or Recruit Tickets full, check-ins, events ending) are scheduled on your device; nothing is sent off the device.</li>
+<li><strong>Update and notice notifications</strong> are delivered through Firebase Cloud Messaging (table above).</li>
+<li><strong>Event &amp; offer notifications (promotional)</strong> are sent <strong>only if you agree</strong>. They are off by default, we show you the result (date and sender) when you agree or opt out, and we ask again every 2 years. They are never sent between 9 PM and 8 AM, the title starts with "(Ad)", and you can opt out anytime in Settings → General.</li>
+<li>You can turn off all notifications with Settings → General → "Push notifications" or in your phone settings.</li>
 </ul>
 <h2>3. Retention and deletion (how to delete your data)</h2>
 <p>The Developer keeps no user data on a server, so you can delete it yourself, right away, as follows. If you need help, email us (section 6).</p>
