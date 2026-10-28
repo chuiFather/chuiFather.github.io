@@ -12,7 +12,7 @@ hr{border:0;border-top:1px solid var(--edge);margin:2.5rem 0}.muted{color:var(--
 .card{background:var(--panel);border:2px solid var(--edge);border-radius:12px;padding:20px;margin:16px 0}
 </style></head><body><main>
 <h1>Privacy Policy — Chui Defense</h1>
-<p>Effective date: 💡 launch date · Last updated: October 17, 2026 · URL: <a href="https://chuifather.github.io/defense/en/privacy/">https://chuifather.github.io/defense/en/privacy/</a>
+<p>Effective date: 💡 launch date · Last updated: October 28, 2026 (push notifications, from 0.3.0) · URL: <a href="https://chuifather.github.io/defense/en/privacy/">https://chuifather.github.io/defense/en/privacy/</a>
 (Korean original: <a href="https://chuifather.github.io/defense/privacy/">https://chuifather.github.io/defense/privacy/</a> — <code>docs/privacy-policy.md</code>. If the two differ, the Korean version prevails.)</p>
 <p>The developer of "Chui Defense" (the "Game") respects your privacy. This policy explains what information the Game handles and how.</p>
 <h2>1. Personal information the developer collects</h2>
@@ -50,6 +50,12 @@ If Android device backup is on, Android also backs up the game data to your Goog
 <td>https://firebase.google.com/support/privacy</td>
 </tr>
 <tr>
+<td>Firebase Cloud Messaging</td>
+<td>Update and notice alerts, and (only if you agree) event &amp; offer alerts</td>
+<td>Firebase installation ID, notification token, subscribed topics (language, consent)</td>
+<td>https://firebase.google.com/support/privacy</td>
+</tr>
+<tr>
 <td>Google Play Billing</td>
 <td>In-app purchases</td>
 <td>Payment details are handled by Google; the developer only sees the purchase record (order number, product)</td>
@@ -67,6 +73,13 @@ If Android device backup is on, Android also backs up the game data to your Goog
 <li>You can turn off ad personalization or reset your advertising ID in your device settings (Google → Ads).</li>
 <li>In regions that require consent, such as the EEA and the UK, an ad consent screen is shown on first launch.</li>
 <li>Play Games sign-in is optional. You can play without it (only achievements and cloud save are unavailable).</li>
+</ul>
+<h2>2-1. Push notifications</h2>
+<ul>
+<li><strong>Game reminders</strong> (Passes full, check-in and missions) are scheduled on your device; nothing is sent off the device.</li>
+<li><strong>Update and notice alerts</strong> arrive through Firebase Cloud Messaging (table above).</li>
+<li><strong>Event &amp; offer alerts (promotional)</strong> are sent <strong>only if you agree</strong>. They are off by default; the game shows you the date and sender each time you agree or opt out, asks again every 2 years, never sends them between 9 PM and 8 AM, marks the title with "(Ad)", and you can opt out anytime in Settings → General.</li>
+<li>You can turn off all notifications in Settings → General → "Push notifications" or in your phone settings.</li>
 </ul>
 <h2>3. Retention and deletion (how to delete your data)</h2>
 <p>The developer keeps no user data on servers, so you can delete it yourself, immediately, as follows. If you need help, email us (section 6).</p>
