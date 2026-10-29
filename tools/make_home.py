@@ -167,7 +167,12 @@ def build(lang):
 
     # 쿠폰 (기간은 페이지 JS가 판단)
     rows = []
+    seen = set()
     for c in load("coupons.json"):
+        # 보상이 여러 개인 쿠폰은 같은 code 줄이 여러 개 (Firebase용) → 사이트에는 한 번만
+        if (c["app"], c["code"]) in seen:
+            continue
+        seen.add((c["app"], c["code"]))
         period = f'{esc(c.get("start", ""))} ~ {esc(c["end"])}' if c.get("end") else t["forever"]
         rows.append(
             f'<div class="card" data-start="{esc(c.get("start", ""))}" data-end="{esc(c.get("end", ""))}">'

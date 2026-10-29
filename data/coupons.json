@@ -38,5 +38,35 @@
     "label_en": "3,000 Allowance",
     "builtin": true,
     "start": "2026-10-27"
+  },
+  {
+    "app": "puzzle",
+    "code": "CHUI-SNACK",
+    "reward": "coins",
+    "amount": 300,
+    "label": "동전 300 + 이동 +5 1개 + 폭탄 1개",
+    "label_en": "300 Coins + 1 Moves +5 + 1 Bomb",
+    "builtin": true,
+    "start": "2026-11-20"
+  },
+  {
+    "app": "puzzle",
+    "code": "PUZZLE-OPEN",
+    "reward": "coins",
+    "amount": 500,
+    "start": "2026-11-20",
+    "end": "2027-02-18",
+    "label": "동전 500 + 이동 +5 2개 (오픈 기념)",
+    "label_en": "500 Coins + 2 Moves +5 (Grand Opening)"
+  },
+  {
+    "app": "puzzle",
+    "code": "PUZZLE-OPEN",
+    "reward": "moves",
+    "amount": 2,
+    "start": "2026-11-20",
+    "end": "2027-02-18",
+    "label": "동전 500 + 이동 +5 2개 (오픈 기념)",
+    "label_en": "500 Coins + 2 Moves +5 (Grand Opening)"
   }
 ]
