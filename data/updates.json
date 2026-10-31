@@ -88,5 +88,25 @@
     "body": "함장 츄이와 함께 우주정거장을 키워 주세요!\n\n• 오픈 기념 이벤트: 7일 출석하면 한정 크루 \"별이\"가 와요 (11월 21일까지)\n• 크루 117종: 모집권은 80분마다 1장, 같은 크루를 또 만나면 별이 올라가요\n• 탐사 4종: 미니게임을 잘하면 보상 최대 +50%\n• 부스트 퍼즐 15스테이지: 풀면 생산 2배 (탐사 탭 맨 아래)\n• 꺼 두어도 생산! 돌아오면 위쪽 선물상자를 받아요\n\n모르는 게 있으면 위쪽 노란 ? 버튼을 눌러 보세요.",
     "title_en": "Chui's Space Station is open!",
     "body_en": "Help Captain Chui grow the space station!\n\n• Grand Opening event: check in for 7 days to get the limited crew \"Starry\" (until Nov 21)\n• 117 crew: you get 1 Recruit Ticket every 80 minutes, and meeting the same crew again raises its stars\n• 4 kinds of exploration: do well in the mini-games for up to +50% rewards\n• 15 Boost Puzzle stages: solve them for 2× production (bottom of the Explore tab)\n• Production keeps going while the app is closed! Claim the Gift Box at the top when you come back\n\nIf anything is unclear, tap the yellow ? button at the top."
+  },
+  {
+    "app": "defense",
+    "id": 2,
+    "version": "0.3.1",
+    "date": "2026-10-29",
+    "title": "더 자연스러워졌어요",
+    "body": "• 적이 길 가는 방향을 보고 걸어요\n• 보스·엘리트가 길 위로 걸어요 (길 아래로 걷던 것)\n• 승리 별·성급 별·판매(휴지통) 아이콘을 새 그림으로\n• 집·해변 적이 그림 속 길 위로 걸어요\n• 피해 숫자·보스 등장 띠가 덜 가려요\n• 시작을 빨리 두 번 누르면 꺼질 수 있던 문제를 고쳤어요\n• 무한 모드 업적 추가: 웨이브 20·40\n• 알림에 주황 츄이 그림\n• 강아지(발바닥)·고양이(생선) 진영 표시를 새 그림으로\n• 고리·효과를 매끈하게 (흩뿌린 점 없앰), 보스 기술 이름표가 보스를 따라가요\n• 강화 카드 이름: 싼 소환 → 소환 비용 할인\n• 광고 입장권: 받기만 하고 입장은 직접 골라요 (광고를 끝까지 안 보면 안내)\n• 별 상자를 열면 연출과 함께 받은 것을 아이콘으로 보여 줘요\n• 위 현황에 골드·모집권·입장권 아이콘\n• 월드맵 새 단장: 스테이지 버튼·발자국 길·챕터 표지판·보스 판 왕관·돌아다니는 적\n• 밸런스: 보통 뒤 챕터 적이 더 튼튼해졌어요 (목표: 챕터 6 약 2주, 챕터 10 약 4주). 어려움·전문가는 그대로",
+    "title_en": "Smoother looks",
+    "body_en": "• Enemies now face the way they walk\n• Bosses and elites walk on the road (they used to walk below it)\n• New art for victory stars, crew stars and the sell (trash) icon\n• House and beach enemies walk on the painted road\n• Damage numbers and the boss banner cover less\n• Fixed a possible crash when tapping Start twice quickly\n• New Endless achievements for waves 20 and 40\n• Notifications show Chui in orange\n• New art for the dog (paw) and cat (fish) badges\n• Smoother rings and effects (no more scattered dots), boss skill labels follow the boss\n• Upgrade card Cheap Summons is now Summon Discount\n• Ads for a Pass now just give the Pass; you choose when to play (and are told if the ad was closed early)\n• Star chests open with an animation and show what you got as icons\n• Icons for Gold, Tickets and Passes on the top bar\n• New world map look: candy stage buttons, paw-print trails, chapter signs, crowns on boss stages and enemies wandering around\n• Balance: enemies in later Normal chapters are tougher (aim: Chapter 6 in about 2 weeks, Chapter 10 in about 4 weeks). Hard and Expert stay the same"
+  },
+  {
+    "app": "defense",
+    "id": 1,
+    "version": "0.3.0",
+    "date": "2026-10-28",
+    "title": "츄이 디펜스가 새로워졌어요!",
+    "body": "• 그림이 전부 바뀌었어요: 크루 41마리·적·배경·화면을 새 카툰 그림으로\n• 새 챕터 9 눈마을·10 하늘 요새 (챕터 보스를 잡으면 편성한 신화 조각)\n• 배경음을 전부 새 곡으로 (생악기)\n• 설정 → 쿠폰 입력 (츄이 시리즈 콜라보 코드도)\n• 푸시 알림: 입장권이 가득 차면·출석·미션 (설정에서 끄기)\n• 소식함 (설정 → 쿠폰 → 소식)",
+    "title_en": "Chui Defense got a makeover!",
+    "body_en": "• All-new cartoon art: 41 crew, enemies, backgrounds and screens\n• New chapters 9 Snow Village and 10 Sky Fortress (chapter bosses drop Mythic shards for your squad)\n• All-new soundtrack (live instruments)\n• Settings → Enter coupon (Chui Series collab codes too)\n• Push notifications: full Passes, check-in, missions (turn off in Settings)\n• News inbox (Settings → Coupon → News)"
   }
 ]
