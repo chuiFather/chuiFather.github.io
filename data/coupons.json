@@ -68,5 +68,25 @@
     "end": "2027-02-18",
     "label": "동전 500 + 이동 +5 2개 (오픈 기념)",
     "label_en": "500 Coins + 2 Moves +5 (Grand Opening)"
+  },
+  {
+    "app": "defense",
+    "code": "CHUI-DEFENSE-OPEN",
+    "reward": "tickets",
+    "amount": 12,
+    "start": "2026-11-07",
+    "end": "2026-12-07",
+    "label": "모집권 12장 (오픈 기념)",
+    "label_en": "12 Recruit Tickets (Grand Opening)"
+  },
+  {
+    "app": "defense",
+    "code": "CHUI-WELCOME",
+    "reward": "tickets",
+    "amount": 5,
+    "label": "모집권 5장 + 입장권 3장",
+    "label_en": "5 Recruit Tickets + 3 Entry Tickets",
+    "builtin": true,
+    "start": "2026-11-07"
   }
 ]

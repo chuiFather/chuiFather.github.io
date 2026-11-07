@@ -16,11 +16,11 @@
     "desc": "산책 나온 포메라니안 츄이가 공원에서 몰려드는 모기·비둘기·다람쥐를 상대로 10분을 버티는 도트 서바이벌 게임입니다.",
     "desc_en": "Chui the Pomeranian is out for a walk in the park. Survive 10 minutes against swarms of mosquitoes, pigeons and squirrels.",
     "icon": "assets/icons/survivors.png", "page": "survivors/",
-    "play": "", "onestore": "https://onesto.re/0001010711",
+    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomsurvivors", "onestore": "https://onesto.re/0001010711",
     "collab_code": "CHUI-SURVIVORS"
   },
   {
-    "id": "defense", "show": true, "status": "testing", "collab_live": false,
+    "id": "defense", "show": true, "status": "released", "collab_live": true,
     "name": "츄이 디펜스", "name_en": "Chui Defense",
     "tagline": "강아지 고양이 머지 디펜스", "tagline_en": "Merge defense with dogs and cats",
     "desc": "같은 크루 둘을 합쳐 더 강하게! 강아지·고양이 크루로 몰려오는 비둘기·다람쥐를 막는 귀여운 도트 머지 디펜스 게임입니다.",
