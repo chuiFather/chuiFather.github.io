@@ -26,7 +26,7 @@
     "desc": "같은 크루 둘을 합쳐 더 강하게! 강아지·고양이 크루로 몰려오는 비둘기·다람쥐를 막는 귀여운 도트 머지 디펜스 게임입니다.",
     "desc_en": "Merge two of the same crew to make them stronger! Stop pigeons and squirrels with your dog and cat crew in this cute pixel merge defense.",
     "icon": "assets/icons/defense.png", "page": "defense/",
-    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomdefense", "onestore": "",
+    "play": "https://play.google.com/store/apps/details?id=com.chuifather.pomdefense", "onestore": "https://onesto.re/0001010712",
     "collab_code": "CHUI-DEFENSE"
   },
   {
