@@ -31,3 +31,9 @@
 - https://chuifather.github.io/survivors/privacy/ — 개인정보처리방침 (게임 설정 화면 버튼이 이 주소를 엶)
 
 파일은 게임 저장소 `chuiFather/pom-survivors`의 `python3 tools/store/make_site.py` → `docs/site/survivors/`에서 만든다. 원본: `docs/privacy-policy.md`.
+
+## 따끈따끈 츄이카페 (`/town/`, 옛 이름 츄이 마을)
+- https://chuifather.github.io/town/ — 게임 소개 (영어 `/town/en/`)
+- https://chuifather.github.io/town/privacy/ — 개인정보처리방침 (영어 `/town/en/privacy/`, 게임 설정 화면 버튼이 이 주소를 엶)
+
+파일은 게임 저장소 `chuiFather/pom-town`의 `python3 tools/store/make_site.py` → `docs/site/town/`에서 만든다. 원본: `docs/privacy-policy.md`·`docs/privacy-policy-en.md`.
