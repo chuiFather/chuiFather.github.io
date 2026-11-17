@@ -53,10 +53,12 @@
     "collab_code": "CHUI-IDLE"
   },
   {
-    "id": "town", "show": false, "status": "dev", "collab_live": false,
-    "name": "츄이 마을", "name_en": "Chui Town",
-    "tagline": "카페와 농장", "tagline_en": "Cafe and farm",
-    "desc": "", "desc_en": "", "icon": "", "page": "", "play": "", "onestore": "",
+    "id": "town", "show": true, "status": "testing", "collab_live": false,
+    "name": "따끈따끈 츄이카페", "name_en": "Toasty Chui Cafe",
+    "tagline": "애견카페와 농장 경영", "tagline_en": "Dog cafe and farm sim",
+    "desc": "포메라니안 사장 츄이의 애견카페! 손님에게 음료와 디저트를 내주고, 레시피를 연구하고, 친구들을 직원으로 뽑고, 가게를 꾸미고, 농장에서 재료를 키우는 귀여운 경영 게임입니다.",
+    "desc_en": "Chui the Pomeranian runs a cozy dog cafe! Serve drinks and desserts, research recipes, hire friends as staff, decorate the shop and grow ingredients on the farm.",
+    "icon": "assets/icons/town.png", "page": "town/", "play": "", "onestore": "",
     "collab_code": "CHUI-TOWN"
   }
 ]
